@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+const {combinePDFFiles} = require("../combine_pdf_files");
+
+combinePDFFiles().then();

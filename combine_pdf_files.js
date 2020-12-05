@@ -8,9 +8,9 @@ const PDF_FILE_INFORMATION = {
 	author: "1pdf (https://github.com/yifaneye/1pdf)"
 };
 
-(async () => {
+async function combine() {
 	// Get PDF files in the directory
-	const filesInDir = fs.readdirSync(__dirname) || [];
+	const filesInDir = fs.readdirSync(process.cwd()) || [];
 	let pdfFiles = filesInDir.filter(file => file.endsWith(".pdf"));
 	console.log(`\n\n🔍 Found ${pdfFiles.join(', ')}\n`);
 
@@ -38,6 +38,8 @@ const PDF_FILE_INFORMATION = {
 
 	// Save Document
 	const pdfBytes = await newPdfFile.save();
-	fs.writeFileSync(PDF_FILE_INFORMATION.name, pdfBytes);
+	fs.writeFileSync(`${process.cwd()}/${PDF_FILE_INFORMATION.name}`, pdfBytes);
 	console.log(`\n💾 Saved ${PDF_FILE_INFORMATION.name}\n`);
-})();
+}
+
+exports.combinePDFFiles = combine;
