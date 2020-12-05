@@ -17,10 +17,10 @@ Watch [1pdf video demo](https://www.youtube.com/watch?v=flhGgjPYar0) on Youtube
 
 ## Background
 
-I wanted to combine my lecture slides (several PDF files every week) into one PDF file, so that I can read, search, go back and forth while opening just one PDF file. 🤓\
+I wanted to combine my lecture slides (several PDF files every week) into one PDF file, so that I can read, search, go back and forth while opening just one PDF file. 🤓
 
-I used "https://combinepdf.com" at first, but it took me so long. 😴\
-Most of that time was spent on uploading and downloading the PDF files, not the actual process of combining the PDF files. 😞\
+I used "https://combinepdf.com" at first, but it took me so long. 😴 \
+Most of that time was spent on uploading and downloading the PDF files, not the actual process of combining the PDF files. 😞
 
 What if I can combine PDF files locally? That means no more time wasted on uploading and downloading the PDF files! 😎 ...
 
@@ -28,10 +28,10 @@ What if I can combine PDF files locally? That means no more time wasted on uploa
 
 Install the '1pdf' package globally using npm
 
-run
 ```
 npm i -g 1pdf
 ```
+
 ✅
 
 OR \
@@ -49,8 +49,19 @@ Step 1. ```cd``` into a directory containing PDF files to be combined
 
 Step 2. (Optional) Rename the PDF files in your desired order
 
-Step 3. Run ```1pdf``` in the terminal to combine the PDF files into one PDF file \
-(Run ```1pdf myFileName.pdf``` can name the output PDF file at the same time)
+Step 3. Run
+```
+1pdf
+```
+to combine the PDF files into one PDF file
+
+OR
+
+Run
+```
+1pdf myFileName.pdf
+```
+to name the output PDF file at the same time
 
 ✅
 
