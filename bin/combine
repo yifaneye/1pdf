@@ -2,4 +2,6 @@
 
 const {combinePDFFiles} = require("../combine_pdf_files");
 
-combinePDFFiles().then().catch(err => console.error(err));
+const outputPDFFileName = process.argv.slice(2)[0];
+
+combinePDFFiles(outputPDFFileName).then().catch(err => console.error(err));

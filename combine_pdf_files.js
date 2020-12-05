@@ -1,14 +1,16 @@
 const fs = require('fs');
 const {PDFDocument} = require('pdf-lib');
 
-const PDF_FILE_INFORMATION = {
-	name: "1pdf_combined.pdf",
-	title: "Combined PDF file",
-	keywords: ['combined', 'merged', 'pdf', 'file'],
-	author: "1pdf (https://github.com/yifaneye/1pdf)"
-};
 
-async function combine() {
+async function combine(outputPDFFileName) {
+
+	const PDF_FILE_INFORMATION = {
+		name: outputPDFFileName || "1pdf_combined.pdf",
+		title: "Combined PDF file",
+		keywords: ['combined', 'merged', 'pdf', 'file'],
+		author: "1pdf (https://github.com/yifaneye/1pdf)"
+	};
+
 	// Get PDF files in the directory
 	const filesInDir = fs.readdirSync(process.cwd()) || [];
 	let pdfFiles = filesInDir.filter(file => file.endsWith(".pdf"));
