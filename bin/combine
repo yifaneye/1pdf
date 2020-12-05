@@ -2,4 +2,4 @@
 
 const {combinePDFFiles} = require("../combine_pdf_files");
 
-combinePDFFiles().then();
+combinePDFFiles().then().catch(err => console.error(err));
