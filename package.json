@@ -1,0 +1,15 @@
+{
+  "name": "1pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "combine_pdf_files.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pdf-lib": "^1.12.0"
+  }
+}
